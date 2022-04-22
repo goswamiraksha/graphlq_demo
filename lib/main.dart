@@ -46,8 +46,11 @@ class HomePage extends StatelessWidget {
       ),
       body: Query(
         options: QueryOptions(
-            document: query, variables: <String, dynamic>{"code": "AS"}),
-        builder: (
+            document: query,
+            variables: <String, dynamic>{"code": "AS"}),
+
+
+            builder: (
             QueryResult result, {
               VoidCallback refetch,
             }) {
